@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Web Cam</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+	<p>1</p>
+	<p>2</p>
+	<script>
+		var constraint = {audio: false, video: true};
+		navigator.mediaDevices.getUserMedia(constraint)
+			.then(function(stream){
+				try{
+					var video = document.createElement('video');
+					document.body.appendChild(video);
+					video.src = URL.createObjectURL(stream);
+					video.play();
+				}catch(error){
+					console.log(error);
+				}
+			})
+			.catch(function(err){
+				console.log(err);
+			});
+	</script>
+  </body>
+</html>

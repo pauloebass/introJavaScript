@@ -1,0 +1,14 @@
+First, make sure that you have key.pem and cert.pem files. You can generate them using this command:
+
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+This generates a cert-key pair and it will be valid for roughly 10 years (3650 days to be exact).
+
+Then you need to run the server with -S for enabling SSL and -C for your certificate file:
+
+$ http-server -S -C cert.pem -o
+Starting up http-server, serving ./ through https
+Available on:
+  https:127.0.0.1:8080
+  https:192.168.1.101:8080
+  https:192.168.1.104:8080
+Hit CTRL-C to stop the server
