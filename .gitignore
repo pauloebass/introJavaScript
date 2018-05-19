@@ -58,6 +58,6 @@ typings/
 .env
 
 # FILES
-cert.pem
+*cert.pem
 key.pem
-n.txt
+*n.txt
