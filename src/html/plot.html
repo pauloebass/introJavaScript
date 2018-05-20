@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Plotting functions in JS using d3 library</title>
+    <meta charset="utf-8">
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+	<style href="../css/plot.css"></style>
+  </head>
+  <body>
+	<h1>Teste</h1>
+	<div id="myFunction"></div>
+	<form>
+		<input type="text" onkeyup="formatMask(this);"/>
+		<input type="text2" onkeyup="formatMask2(this);" onblur="formatDecimal(this);" onfocus="formatMask2(this);"/>
+	</form>
+	<script src="../js/plot.js"></script>
+  </body>
+</html>

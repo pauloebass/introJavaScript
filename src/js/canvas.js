@@ -1,15 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Canvas</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-		<canvas id="myCanvas" width="400" height="400" style="border-style: double;"> 
-			Canvas is not supported by your browser...
-		</canvas>
-	<script>
-	  var canvas, ctx, w, h;
+var canvas, ctx, w, h;
 	  var xMonster1 = 10;
 	  var xMonster2 = 10;
 	  var yMonster1 = 115;
@@ -229,6 +218,3 @@
 		moveBall(ball);
 		requestAnimationFrame(loopBall1);
 	}
-	</script>
-  </body>
-</html>
